@@ -8,18 +8,21 @@
 		<link href="./css/normalize.css" rel="stylesheet">
 		<link href="./css/claw0ed.css" rel="stylesheet">
 		<style>
-			#loginfrm {
+			#joinfrm {
 				width: 400px; margin: 0 auto;
 				/* border: 1px solid red; */
-				padding-top: 150px; }
+				padding-top: 100px; }
 			 
-			 #loginfrm label {
+			 #joinfrm label {
 			 	/* border: 1px solid blue; */
 			 	display: inline-block;
 			 	width: 120px; text-align: right;
-			 	font-weight: bold }
-			 #loginfrm div {
+			 	font-weight: bold  }
+			 #joinfrm div {
 			 	margin: 7px 0; }
+			 
+			 /* buttom[type=submit] { margin-left: 125px; } */	
+			 	
 		</style>
 	</head>
 	<body>
@@ -33,26 +36,37 @@
 		</ul>
 		<hr>
 		</header><!-- 머리글 -->
-		<h2>로그인</h2>
+		<h2>회원정보</h2>
 		<div id="contents">
-			<form id="loginfrm" action="" method="post"><!-- method="post" 질의 문자열 -->
+			<form id="joinfrm" action="" method="post"><!-- method="post" 질의 문자열 -->
 				<div>
 					<label for="uid">아이디</label>
 					<input type="text" name="uid" id="uid"
-					required="required">
+					required="required" value="claw0ed"
+					disabled="disabled">
+				</div>				<div>
+					<label for="name">이름</label>
+					<input type="text" name="name" id="name"
+					required="required" value="양주상"
+					disabled="disabled">
 				</div>
 				<div>
-					<label for="pwd">비밀번호</label>
-					<input type="password" name="pwd" id="pwd">
+					<label for="email">이메일</label>
+					<input type="text" name="email" id="email"
+					required="required" value="claw0ed@gmail.com"
+					disabled="disabled">
 				</div>
 				<div>
-					<!-- input type="submit" value="입력완료" -->
-					<!-- input type="reset" value="다시입력" -->
-					<label></label>
-					<button type="submit">로그인</button>
+					<label for="date">가입일</label>
+					<input type="text" name="date" id="date"
+					required="required" value="2018-01-16 12:00:00"
+					disabled="disabled">
 				</div>
+
+
 	
 			</form>
+			
 		</div><!-- 본문 -->
 		<footer>
 			<hr>

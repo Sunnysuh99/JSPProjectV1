@@ -16,7 +16,8 @@
 			 #joinfrm label {
 			 	/* border: 1px solid blue; */
 			 	display: inline-block;
-			 	width: 120px; text-align: right; }
+			 	width: 120px; text-align: right;
+			 	font-weight: bold  }
 			 #joinfrm div {
 			 	margin: 7px 0; }
 			 
@@ -37,7 +38,7 @@
 		</header><!-- 머리글 -->
 		<h2>회원가입</h2>
 		<div id="contents">
-			<form id="joinfrm" action="" method="post">
+			<form id="joinfrm" action="" method="post"><!-- method="post" 질의 문자열 -->
 				<div>
 					<label for="uid">아이디</label>
 					<input type="text" name="uid" id="uid"
