@@ -15,6 +15,8 @@
 				margin-right: -50%;
 				transform: translate(-50%, -50%) }
 				
+			/* img { margin: 70px 450px auto } */
+				
 		</style>
 	</head>
 	<body>

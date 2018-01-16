@@ -38,28 +38,29 @@
 		</header><!-- 머리글 -->
 		<h2>회원가입</h2>
 		<div id="contents">
-			<form id="joinfrm" action="" method="post"><!-- method="post" 질의 문자열 -->
+			<form id="joinfrm" action="" method="get"><!-- method="post" 질의 문자열 -->
 				<div>
 					<label for="uid">아이디</label>
 					<input type="text" name="uid" id="uid"
-					required="required">
+					>
 				</div>
 				<div>
 					<label for="pwd">비밀번호</label>
 					<input type="password" name="pwd" id="pwd"
-					required="required">
+					>
 				</div>
 				<div>
 					<label for="repwd">비밀번호 확인</label>
 					<input type="password" name="repwd" id="repwd"
-					required="required">
+					>
 				</div>
 				<div>
 					<label for="name">이름</label>
 					<input type="text" name="name" id="name"
-					required="required">
+					>
 				</div>
 				<div>
+					<!-- required="required" -->
 					<!-- input type="submit" value="입력완료" -->
 					<!-- input type="reset" value="다시입력" -->
 					<label></label>
@@ -74,5 +75,15 @@
 			<hr>
 			<p>copyright&copy; 2018<sup>&reg;</sup> claw0ed. all right reserved.</p>
 		</footer><!-- 꼬릿말 -->
+		
+		<script>
+			var joinfrm = document.getElementById("joinfrm");
+			joinfrm.onsubmit = checkjoin;
+			
+			function checkjoin() {
+				alert('버튼클릭');
+				return false;
+			}
+		</script>
 	</body>
 </html>

@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
 /* 본문영역의 크기를 적당하게 조절 */
-body { whdth: 950px; margin: 0 auto; }
+body { whdth: 950px; margin: 0 auto;
+	font-family: '맑은 고딕', verdana, 'malgul gothic';
+	font-size: 11pt
+}
 /* 하이퍼링크에 대한 디자인 적용 */
 a:link { text-decoration: none; color: black; font-weight: bold }	
 a:visited { color: black }	
