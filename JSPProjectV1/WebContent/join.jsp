@@ -38,7 +38,7 @@
 		</header><!-- 머리글 -->
 		<h2>회원가입</h2>
 		<div id="contents">
-			<form id="joinfrm" action="" method="get"><!-- method="post" 질의 문자열 -->
+			<form id="joinfrm" action="joinok.jsp" method="get"><!-- method="post" 질의 문자열 -->
 				<div>
 					<label for="uid">아이디</label>
 					<input type="text" name="uid" id="uid">
