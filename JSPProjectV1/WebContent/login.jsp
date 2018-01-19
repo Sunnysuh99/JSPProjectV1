@@ -23,19 +23,10 @@
 		</style>
 	</head>
 	<body>
-		<header>
-		<ul>
-		 	<li><a href="index.jsp">Home</a></li>
-		 	<li><a href="join.jsp">회원가입</a></li>
-		 	<li><a href="login.jsp">로그인</a></li>
-		 	<li><a href="list.jsp">게시판</a></li>
-		 	<li><a href="myinfo.jsp">회원정보</a></li>
-		</ul>
-		<hr>
-		</header><!-- 머리글 -->
+		<jsp:include page="layout/header.jsp" />
 		<h2>로그인</h2>
 		<div id="contents">
-			<form id="loginfrm" action="" method="post"><!-- method="post" 질의 문자열 -->
+			<form id="loginfrm" method="post" action="loginok.jsp"><!-- method="post" 질의 문자열 -->
 				<div>
 					<label for="uid">아이디</label>
 					<input type="text" name="uid" id="uid"
@@ -54,9 +45,6 @@
 	
 			</form>
 		</div><!-- 본문 -->
-		<footer>
-			<hr>
-			<p>copyright&copy; 2018<sup>&reg;</sup> claw0ed. all right reserved.</p>
-		</footer><!-- 꼬릿말 -->
+		<jsp:include page="layout/footer.jsp" />
 	</body>
 </html>

@@ -26,19 +26,10 @@
 		</style>
 	</head>
 	<body>
-		<header>
-		<ul>
-		 	<li><a href="index.jsp">Home</a></li>
-		 	<li><a href="join.jsp">회원가입</a></li>
-		 	<li><a href="login.jsp">로그인</a></li>
-		 	<li><a href="list.jsp">게시판</a></li>
-		 	<li><a href="myinfo.jsp">회원정보</a></li>
-		</ul>
-		<hr>
-		</header><!-- 머리글 -->
+		<jsp:include page="layout/header.jsp" />
 		<h2>회원가입</h2>
 		<div id="contents">
-			<form id="joinfrm" action="joinok.jsp" method="get"><!-- method="post" 질의 문자열 -->
+			<form id="joinfrm" action="joinok.jsp" method="post"><!-- method="post" 질의 문자열 -->
 				<div>
 					<label for="uid">아이디</label>
 					<input type="text" name="uid" id="uid">
@@ -67,10 +58,7 @@
 			</form>
 			
 		</div><!-- 본문 -->
-		<footer>
-			<hr>
-			<p>copyright&copy; 2018<sup>&reg;</sup> claw0ed. all right reserved.</p>
-		</footer><!-- 꼬릿말 -->
+		<jsp:include page="layout/footer.jsp" />
 		
 		<script>
 			var joinfrm = document.getElementById("joinfrm");
@@ -91,7 +79,6 @@
 					pwd.focus();
 				} else if (repwd.value == "") {
 					alert("비밀번호 확인을 입력하세요!");
-					repwd.focus();
 				} else if (pwd.value != repwd.value) {
 					alert("비밀번호가 일치하지 않습니다!");
 					pwd.focus();

@@ -30,16 +30,7 @@
 		</style>
 	</head>
 <body>
-		<header>
-		<ul>
-		 	<li><a href="index.jsp">Home</a></li>
-		 	<li><a href="join.jsp">회원가입</a></li>
-		 	<li><a href="login.jsp">로그인</a></li>
-		 	<li><a href="list.jsp">게시판</a></li>
-		 	<li><a href="myinfo.jsp">회원정보</a></li>
-		</ul>
-		<hr>
-		</header><!-- 머리글 -->
+		<jsp:include page="layout/header.jsp" />
 		<h2>게시판 본문글</h2>
 		<div id="contents">
 			<div id="view"><!-- method="post" 질의 문자열 -->
@@ -63,9 +54,6 @@
 			</div>
 			
 		</div><!-- 본문 -->
-		<footer>
-			<hr>
-			<p>copyright&copy; 2018<sup>&reg;</sup> claw0ed. all right reserved.</p>
-		</footer><!-- 꼬릿말 -->
+		<jsp:include page="layout/footer.jsp" />
 	</body>
 </html>
