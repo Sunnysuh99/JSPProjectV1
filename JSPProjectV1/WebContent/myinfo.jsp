@@ -31,15 +31,15 @@
 			<div id="myinfo">
 				<div>
 					<label>아이디</label>
-					<span>claw0ed</span>
+					<span>${ myuid }</span>
 				</div>
 				<div>
 					<label>이름</label>
-					<span>하하하</span>
+					<span>${ myname }</span>
 				</div>
 				<div>
 					<label>가입일</label>
-					<span>2018-01-16 12:00:00</span>
+					<span>${ mydate }</span>
 				</div>
 			</div>
 		</div><!-- 본문 -->
