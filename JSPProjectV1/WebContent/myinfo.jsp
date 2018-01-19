@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<!-- 로그인 안한 상태라면 login.jsp 로 페이지 이동 -->
+<!-- 로그인 하지 않았다면(세션 데이터가 없다면) login.jsp 로 페이지 이동 -->
 <c:if test="${ empty myuid }">
 	<c:redirect url="login.jsp"/>
 </c:if>
